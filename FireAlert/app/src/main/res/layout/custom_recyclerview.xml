@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:background="@color/flames"
+    android:elevation="12sp"
+    app:cardMaxElevation="16sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageview"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="4sp"
+            android:src="@drawable/profileimage"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageview"
+            android:layout_alignRight="@+id/threedot"
+            android:layout_alignParentTop="true"
+            android:text="UserName"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview1"
+            android:layout_alignLeft="@+id/imageview"
+            android:layout_alignRight="@+id/threedot"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview2"
+            android:layout_alignLeft="@+id/imageview"
+            android:layout_alignRight="@+id/threedot"
+            android:text="Mobile"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview3"
+            android:layout_alignLeft="@+id/imageview"
+            android:layout_alignRight="@+id/threedot"
+            android:text="Post"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+        <ImageView
+            android:id="@+id/fire_icon"
+            android:layout_below="@+id/threedot"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/flame"
+            android:layout_width="50sp"
+            android:layout_height="50sp" />
+
+        <ImageView
+            android:id="@+id/threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2sp"
+            android:padding="10sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="6sp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

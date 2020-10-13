@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/flames"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageview"
+        android:src="@drawable/animatedflame"
+        android:layout_above="@+id/imageview2"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textview1"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="Major Project"
+        android:textAlignment="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textview2"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:layout_marginBottom="20sp"
+        android:layout_above="@+id/textview1"
+        android:textAlignment="center"
+        android:text="FireAlert App"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageview2"
+        android:layout_above="@+id/textview1"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+
+        android:padding="10sp"
+        android:scaleType="centerCrop"
+        android:layout_alignRight="@+id/textview2"
+        app:srcCompat="@drawable/flame"/>
+
+</RelativeLayout>

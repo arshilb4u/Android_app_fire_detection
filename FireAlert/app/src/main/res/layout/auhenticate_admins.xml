@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/textview"
+        android:text="This app is only for authorize person."
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:layout_margin="10sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_margin="6sp"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@+id/textview"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/textinputedittext"
+            android:hint="Enter your pass code"
+            android:maxLines="1"
+            android:fontFamily="casual"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button1"
+        android:text="Cancel"
+        android:layout_below="@+id/textinputlayout"
+        android:layout_margin="6sp"
+        android:layout_marginLeft="100sp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button2"
+        android:text="Proceed"
+        android:layout_marginRight="100sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textinputlayout"
+        android:layout_margin="6sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/flames"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/description"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="College Major Project"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="casual"
+        android:text="This FireAlert Aplication has been develop to support our team python fire detection project that works on inception v3 model.Using this app you are able to register the users who will get the alert message when fire will occur on Acropolis Technical Campus location or you can set any other location.There is also a notification alert on this app and email will send it to the registered users on realtime."
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10sp"
+        android:text="Major Project"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textview1"
+        android:layout_alignRight="@+id/imageview"
+        android:layout_marginRight="50sp"
+        android:text="FireAlert"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:textStyle="italic|bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageview"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_above="@+id/textview1"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/animatedflame" />
+</RelativeLayout>

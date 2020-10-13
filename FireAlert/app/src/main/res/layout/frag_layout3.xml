@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/flames"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifview"
+        android:layout_above="@+id/title_alert"
+        android:layout_centerInParent="true"
+        android:src="@drawable/animatedflame"
+        android:layout_width="200sp"
+        android:layout_height="200sp" />
+<TextView
+    android:id="@+id/title_alert"
+    android:textColor="@android:color/holo_red_dark"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:layout_above="@+id/textview"
+    android:textAlignment="center"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/map_alert"
+        android:layout_below="@+id/textview"
+        android:textColor="@android:color/holo_blue_light"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No notification has received till now that tells us the location where the fire has been occur."
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:text="Major Project"
+        android:padding="10sp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textview2"
+        android:text="FireAlert"
+        android:textSize="30sp"
+        android:layout_marginRight="50sp"
+        android:layout_alignRight="@+id/imageview"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="italic|bold"
+        android:layout_above="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<ImageView
+    android:id="@+id/imageview"
+    android:layout_width="50sp"
+    app:srcCompat="@drawable/flame"
+    android:layout_alignParentRight="true"
+    android:layout_above="@+id/textview1"
+    android:layout_height="50sp" />
+
+</RelativeLayout>
